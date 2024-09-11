@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true" class="poppins">
+  <ion-grid class="h-100">
+    <ion-row class="onboarding">
+       <ion-col class="position-relative">
+        <ion-button class="onboarding__skip position-absolute" routerLink="/" fill="clear">SKIP</ion-button>
+        <swiper-container swiperElement #swiper (afterinit)="swiperReady()" [config]="config" >
+          <swiper-slide *ngFor="let img of Images">
+            <ion-thumbnail class="onboarding__images">
+              <img [src]="img.src" [alt]="img.alt" />
+            </ion-thumbnail>
+            <ion-col class="onboarding__desc">
+              <h1 class="onboarding__title">Take hold of your finances</h1>
+              <p class="onboarding__description">Running your finances is easier with xyz</p>
+            </ion-col>
+          </swiper-slide>
+
+        </swiper-container>
+      </ion-col>
+      <ion-col class="d-flex justify-content-end align-items-end px-4">
+          <div class="custom-pagination"></div>
+          <ion-button (click)="goNext()" fill="clear"  class="onboarding__btn">
+            NEXT
+          </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+
+

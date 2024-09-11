@@ -3,6 +3,24 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  /** royal blue **/
+  --ion-color-royal-blue: #5771F9;
+	--ion-color-royal-blue-rgb: 87,113,249;
+	--ion-color-royal-blue-contrast: #ffffff;
+	--ion-color-royal-blue-contrast-rgb: 255,255,255;
+	--ion-color-royal-blue-shade: #4d63db;
+	--ion-color-royal-blue-tint: #687ffa;
+
+  .ion-color-royal-blue {
+    --ion-color-base: var(--ion-color-royal-blue);
+    --ion-color-base-rgb: var(--ion-color-royal-blue-rgb);
+    --ion-color-contrast: var(--ion-color-royal-blue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-royal-blue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-royal-blue-shade);
+    --ion-color-tint: var(--ion-color-royal-blue-tint);
+  }
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -234,3 +252,6 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

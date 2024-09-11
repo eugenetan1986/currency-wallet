@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  title="Wallet";
+  decription="Money Transfer wallet & Finace UI Kit";
+
+  constructor(private router:Router) {}
+
+  goToPage() {
+    this.router.navigate(['/onboarding']);
+  }
+
 
 }

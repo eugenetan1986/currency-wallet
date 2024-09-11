@@ -24,3 +24,20 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+@import 'swiper/scss';
+// @import 'swiper/scss/navigation';
+// @import 'swiper/scss/pagination';
+
+
+@font-face {
+  font-family: poppins;
+  src: url(assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+.poppins {
+  font-family: poppins;
+}
+
+
